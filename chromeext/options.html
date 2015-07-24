@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Nag Options</title>
+  </head>
+  <body>
+    <h1>Nag Options</h1>
+    <p id="work-block-info"></p>
+    <form id="options-form">
+     	<div id="phone number">
+          <span>Phone number: </span>
+	<input id="phone" type="tel" size="20"/> 
+       	</div>
+	<div id="black listed sites">
+	 <h2>Black-listed sites</h2>
+	<textarea id="blacklist" rows="15" columns="50"></textarea><br>	
+	<div id="timing">
+	<h2>Timing Options</h2>
+	<span>Nag you during the following times:</span><br>	
+	<select id="timestart"></select>
+	<span> to </span>
+	<select id="timeend"></select><br>
+	<input type="checkbox" name="enablebreak" id ="enablebreak">Enable break<br>
+	<span>With a break during the following times:</span><br>	
+	<select id="breaktimestart"></select>
+	<span> to </span>
+	<select id="breaktimeend"></select><br>
+	<br><span>Nag you on the following days:</span><br>
+          <input type="checkbox" name="week" class ="week" value="Sun">Sunday
+  	  <input type="checkbox" name="week" class ="week" value="Mon">Monday
+	  <input type="checkbox" name="week" class ="week" value="Tue">Tuesday
+  	  <input type="checkbox" name="week" class ="week" value="Wed">Wednesday
+	  <input type="checkbox" name="week" class ="week" value="Thu">Thursday
+	  <input type="checkbox" name="week" class ="week" value="Fri">Friday
+  	  <input type="checkbox" name="week" class ="week" value="Sat">Saturday
+	  <br><br><span>Interval at which to nag: </span>
+	  <input id="interval" type="number" min="10" max="600" name="interval"/></span> seconds<br><br>
+	<button type="submit" id="save-button">Update</button><br>
+	<div id="save-status"></div>
+	</form>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="options.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>test</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>S3Sample</display-name>
+    <servlet-name>S3Sample</servlet-name>
+    <servlet-class>test.S3Sample</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>S3Sample</servlet-name>
+    <url-pattern>/S3Sample</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateProfile</display-name>
+    <servlet-name>UpdateProfile</servlet-name>
+    <servlet-class>test.UpdateProfile</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateProfile</servlet-name>
+    <url-pattern>/UpdateProfile</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Nag</display-name>
+    <servlet-name>Nag</servlet-name>
+    <servlet-class>test.Nag</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Nag</servlet-name>
+    <url-pattern>/Nag</url-pattern>
+  </servlet-mapping>
+</web-app>

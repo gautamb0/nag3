@@ -1,0 +1,10 @@
+branch-defaults:
+  default:
+    environment: test2
+global:
+  application_name: test2
+  default_ec2_keyname: null
+  default_platform: 64bit Amazon Linux 2015.03 v1.4.4 running Tomcat 7 Java 7
+  default_region: us-east-1
+  profile: eb-cli
+  sc: null
